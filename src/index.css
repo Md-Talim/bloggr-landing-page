@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@layer components {
+  .container {
+    @apply lg:max-w-screen-2xl mx-auto;
+  }
+}

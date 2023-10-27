@@ -15,6 +15,10 @@ export default {
         veryDarkGrayishBlue: 'hsl(207, 13%, 34%)', // body copy
         veryDarkBlackBlue: 'hsl(240, 10%, 16%)', // footer background
       },
+      backgroundImage: {
+        hero: 'url("/images/bg-pattern-intro-desktop.svg")',
+        'hero-mobile': 'url("/images/bg-pattern-intro-mobile.svg")',
+      },
     },
   },
   plugins: [],
