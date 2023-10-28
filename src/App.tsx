@@ -9,7 +9,7 @@ const App = () => {
         <Navbar />
       </header>
 
-      <section className="container mt-28 md:mt-20">
+      <section className="container mt-28 md:mt-20 max-sm:px-4">
         <div className="text-center">
           <h1 className="text-4xl md:text-7xl text-white font-bold">
             A modern publishing platform

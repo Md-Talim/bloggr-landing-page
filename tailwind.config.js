@@ -11,6 +11,7 @@ export default {
 
         // Neutral
         white: 'hsl(0, 0%, 100%)', // text
+        lightGray: '#efeff1',
         grayishBlue: 'hsl(240, 2%, 79%)', // footer text
         veryDarkGrayishBlue: 'hsl(207, 13%, 34%)', // body copy
         veryDarkBlackBlue: 'hsl(240, 10%, 16%)', // footer background
