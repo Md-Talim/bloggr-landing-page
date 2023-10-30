@@ -14,7 +14,7 @@ button {
 }
 
 @layer components {
-  .container {
-    @apply lg:max-w-screen-2xl mx-auto;
+  .Container {
+    @apply lg:max-w-screen-xl mx-auto;
   }
 }

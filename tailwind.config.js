@@ -20,6 +20,9 @@ export default {
         hero: 'url("/images/bg-pattern-intro-desktop.svg")',
         'hero-mobile': 'url("/images/bg-pattern-intro-mobile.svg")',
       },
+      fontFamily: {
+        ubuntu: ['ubuntu', 'sans-serif'],
+      },
     },
   },
   plugins: [],
