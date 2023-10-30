@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import { features } from './data';
 import Hero from './sections/Hero';
 import Overview from './sections/Overview';
@@ -61,10 +62,12 @@ const App = () => {
 
         <div className="space-y-8 max-sm:text-center px-8">
           {features.map((feature) => (
-            <Description {...feature} />
+            <Description key={feature.label} {...feature} />
           ))}
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };
