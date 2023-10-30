@@ -1,5 +1,21 @@
+import { features } from './data';
 import Hero from './sections/Hero';
 import Overview from './sections/Overview';
+
+const Description = ({
+  label,
+  description,
+}: {
+  label: string;
+  description: string;
+}) => (
+  <div className="space-y-4">
+    <h3 className="text-3xl font-semibold text-veryDarkBlue">{label}</h3>
+    <p className="text-veryDarkGrayishBlue max-w-[55ch] leading-relaxed md:text-lg">
+      {description}
+    </p>
+  </div>
+);
 
 const App = () => {
   return (
@@ -26,6 +42,27 @@ const App = () => {
               your site competitive.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="mt-20 md:mt-60 xl:mr-40 flex flex-col xl:flex-row max-sm:gap-10 items-center xl:justify-between">
+        <div className="xl:-translate-x-[23%] xl:scale-125">
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcSet="/images/illustration-laptop-desktop.svg"
+            />
+            <img
+              src="/images/illustration-laptop-mobile.svg"
+              alt="Laptop Illustration"
+            />
+          </picture>
+        </div>
+
+        <div className="space-y-8 max-sm:text-center px-8">
+          {features.map((feature) => (
+            <Description {...feature} />
+          ))}
         </div>
       </section>
     </>
