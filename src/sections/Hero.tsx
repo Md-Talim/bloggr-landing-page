@@ -5,24 +5,24 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <main className="bg-veryLightRed bg-hero-mobile md:bg-hero min-h-[70vh] rounded-bl-[100px] md:rounded-bl-[200px] bg-center">
-        <header className="Container md:px-5">
+      <main className="bg-veryLightRed bg-hero-mobile md:bg-hero min-h-[80vh] rounded-bl-[100px] md:rounded-bl-[150px] bg-center">
+        <header className="Container">
           <Navbar />
         </header>
 
-        <section className="container mt-28 md:mt-20 max-sm:px-4">
+        <section className="Container mt-28 md:my-32 max-sm:px-4">
           <div className="text-center">
-            <h1 className="text-4xl md:text-7xl text-white font-bold">
+            <h1 className="text-4xl md:text-6xl lg:text-[78px] text-white font-bold">
               A modern publishing platform
             </h1>
-            <p className="text-lg md:text-xl mt-5 text-white">
+            <p className="text-lg md:text-2xl mt-10 text-white">
               Grow your audience and build your online brand
             </p>
           </div>
 
-          <div className="flex gap-6 mt-10 text-center w-full items-center justify-center">
+          <div className="flex gap-6 mt-20 text-center w-full items-center justify-center">
             <Button label="Start for Free" variant="primary" />
-            <Button label="Learn More" variant="underlined" />
+            <Button label="Learn More" variant="underlined" customStyles="" />
           </div>
         </section>
       </main>

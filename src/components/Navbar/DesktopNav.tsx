@@ -7,11 +7,11 @@ const NavLink = ({ label, links }: { label: string; links: string[] }) => {
   return (
     <li className="text-white flex items-center relative">
       <button
-        className="text-white flex items-center gap-2 font-bold hover:underline active:underline"
+        className="text-white flex items-center gap-2 lg:gap-4 font-bold hover:underline active:underline text-xl"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {label}
-        <img src="/images/icon-arrow-light.svg" alt="" />
+        <img src="/images/icon-arrow-light.svg" alt="Icon Down" />
       </button>
 
       <div
@@ -33,7 +33,7 @@ const NavLink = ({ label, links }: { label: string; links: string[] }) => {
 
 const DesktopNav = () => (
   <nav className="hidden md:flex">
-    <ul className="flex items-center justify-between gap-4">
+    <ul className="flex items-center justify-between gap-4 lg:gap-10">
       {navLinks.map((link) => (
         <NavLink key={link.label} {...link} />
       ))}

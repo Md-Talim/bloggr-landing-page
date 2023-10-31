@@ -4,13 +4,19 @@ import MobileNav from './MobileNav';
 
 const Logo = () => (
   <div>
-    <img src="/images/logo.svg" alt="bloggr" />
+    <img
+      src="/images/logo.svg"
+      alt="bloggr"
+      height="100px"
+      width="165px"
+      className="pl-4"
+    />
   </div>
 );
 
 const Navbar = () => {
   return (
-    <nav className="py-10 md:py-20 max-sm:px-5 w-full flex gap-8 items-center justify-between relative">
+    <nav className="py-10 md:py-20 max-xl:px-5 w-full flex gap-4 lg:gap-24 items-center justify-between relative">
       <Logo />
 
       {/* Mobile menu */}

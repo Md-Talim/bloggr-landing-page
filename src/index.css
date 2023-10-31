@@ -15,6 +15,6 @@ button {
 
 @layer components {
   .Container {
-    @apply lg:max-w-screen-xl mx-auto;
+    @apply lg:max-w-[1478px]  mx-auto;
   }
 }
